@@ -3,11 +3,12 @@ import './styles.scss';
 import Navigation from '../../components/navigation';
 import data from '../../data/services';
 import Button from '../../components/button';
+import Footer from '../../components/footer';
 
 const Service = ({ service }) => {
 	const currentData = data.find(ele => ele.url === service);
 
-	if (currentData === null)
+	if (currentData === undefined)
 		return <h5>Broken Should have never got here!</h5>
 
 	return (  
@@ -30,6 +31,7 @@ const Service = ({ service }) => {
 					</div>
 				</div>
 			</h2>
+			<Footer />
 		</div>
 	);
 }

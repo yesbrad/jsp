@@ -4,6 +4,7 @@ import Navigation from '../../components/navigation';
 import Header from '../../components/header';
 import Heading from '../../components/heading';
 import ServicesList from '../../components/servicesList';
+import Footer from '../../components/footer';
 
 const Home = () => {
 	return (  
@@ -12,6 +13,7 @@ const Home = () => {
 			<Header />
 			<Heading title="Services" />
 			<ServicesList />
+			<Footer />
 		</div>
 	);
 }

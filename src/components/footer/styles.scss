@@ -1,0 +1,38 @@
+@import '../../styles/config.scss';
+
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: $primaryColor;
+	height: 15rem;
+	padding: 2rem;
+	box-sizing: border-box;
+
+	ul{
+		display: flex;
+		flex-direction: row;
+		width: 30%;
+		justify-content: space-around;
+		margin-bottom: 2rem;
+		color: white;
+
+		li {
+			color:white;
+			
+			.footer-link {
+				text-decoration: none;
+
+				&:visited {
+					color: white;
+				}
+			}
+		}
+	}
+
+	span {
+		color: $white;
+		font-size: 0.7rem;
+	}
+}
