@@ -1,0 +1,12 @@
+@import '../../styles/config.scss';
+
+.button-container {
+	button {
+		color: $white;
+		background-color: $primaryColor;
+		// padding: 1rem;
+		width: 100%;
+		min-height: 3rem;
+		max-height: 3rem;
+	}
+}

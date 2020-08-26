@@ -1,1 +1,39 @@
 @import '../../styles/config.scss';
+
+.header-container {
+		background-image: url('../../images/VanDouble1.jpg');
+		background-position: center;
+		background-size: cover;
+		height: 40rem;
+		width: 100%;
+		position: relative;
+
+		.cta-container {
+			position: absolute;
+			bottom: 3rem;
+			right: 3rem;
+			background-color: $black;
+			width: 60%;
+			color: white;
+			padding: 3rem;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.header-col{
+
+				h1 {
+					font-size: 2rem;
+					margin-bottom: 1rem;
+					font-weight: 900;
+				}
+
+				h2 {
+					font-size: 3rem;
+					margin-bottom: 1rem;
+					font-weight: 900;
+				}
+			}
+		}
+}

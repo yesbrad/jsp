@@ -8,10 +8,14 @@ const Navigation = () => {
 	return ( 
 		<div className="navigation-container">
 			<nav>
-				<h1>JSP</h1>
+				<div className="nav-logo">
+					
+				</div>
 				<ul>
-					<Link to="/">Home</Link>
-					<Link to="/service/ImaLegend">Service</Link>
+					<li><Link to="/">Home</Link></li>
+					<li><Link to="/service/yeet">Services</Link></li>
+					<li><Link to="/about">About</Link></li>
+					<li><Link to="/contact">Contact</Link></li>
 				</ul>
 			</nav>
 		</div>

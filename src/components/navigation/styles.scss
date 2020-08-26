@@ -1,1 +1,27 @@
 @import '../../styles/config.scss';
+
+.navigation-container nav {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5rem;
+	box-sizing: border-box;
+
+	.nav-logo {
+		width: 10rem;
+		height: 10rem;
+		background-image: url('../../images/JSP_LOGO_3000_Transparent.png');
+		background-position: center;
+		overflow: hidden;
+		background-size: cover;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		li{
+			margin-left: 2rem;
+		}
+	}
+}
