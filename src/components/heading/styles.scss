@@ -1,0 +1,10 @@
+@import '../../styles/config.scss';
+
+.heading-container {
+	h3{
+		font-size: 3rem;
+		color: $primaryColor;
+		padding: $sidePadding;
+		font-weight: 900;
+	}
+}
