@@ -1,1 +1,43 @@
 @import '../../styles/config.scss';
+
+.servicesList-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	.service-card {
+		padding: $sidePadding;
+		
+		.service-card-container {
+			height: 30rem;
+			position: relative;
+
+			.service-cta-card {
+				position: absolute;
+				background-color: $primaryColor;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				top: 75%;
+				padding: 2rem;
+				color: $white;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				text-decoration: none;
+				
+				.service-cta-col {
+
+					h4 {
+						font-size: 2rem;
+						font-weight: 700;
+						margin-bottom: 0.5rem;
+					}
+
+					p {
+						font-weight: 200;
+					}
+				}
+			}
+		}
+	}
+}

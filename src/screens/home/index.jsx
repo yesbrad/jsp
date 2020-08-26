@@ -3,6 +3,7 @@ import './styles.scss';
 import Navigation from '../../components/navigation';
 import Header from '../../components/header';
 import Heading from '../../components/heading';
+import ServicesList from '../../components/servicesList';
 
 const Home = () => {
 	return (  
@@ -10,7 +11,7 @@ const Home = () => {
 			<Navigation />
 			<Header />
 			<Heading title="Services" />
-			Home
+			<ServicesList />
 		</div>
 	);
 }
