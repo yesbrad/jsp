@@ -11,7 +11,7 @@ const Navigation = () => {
 				<h1>JSP</h1>
 				<ul>
 					<Link to="/">Home</Link>
-					<Link to="/service">Service</Link>
+					<Link to="/service/ImaLegend">Service</Link>
 				</ul>
 			</nav>
 		</div>

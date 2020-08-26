@@ -2,11 +2,13 @@ import React from 'react';
 import './styles.scss';
 import Navigation from '../../components/navigation';
 
-const Service = () => {
+const Service = ({ service }) => {
 	return (  
 		<div className="service-container">
 			<Navigation />
-			Service
+			<h2>
+				{service}
+			</h2>
 		</div>
 	);
 }
