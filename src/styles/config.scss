@@ -21,7 +21,7 @@ $spacing1: 1rem;
 $spacing2: 2rem;
 $borderRadius1: 2rem;
 
-$h1Size: 4rem;
+$h1Size: 3.5rem;
 
 // PRESETS
 
@@ -33,6 +33,10 @@ $h1Size: 4rem;
 
 @mixin DBorder {
 	border: 1px solid red;
+}
+
+@mixin DBorderB {
+	border: 2px solid blue;
 }
 
 @mixin Fill {

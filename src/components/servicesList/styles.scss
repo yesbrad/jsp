@@ -1,11 +1,12 @@
 @import '../../styles/config.scss';
 
 .servicesList-container {
+	padding: 1rem;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 
 	.service-card {
-		padding: $sidePadding;
+		padding: 1rem;
 		
 		.service-card-container {
 			height: 30rem;
@@ -24,7 +25,24 @@
 				justify-content: space-between;
 				align-items: center;
 				text-decoration: none;
-				
+				transition: top 100ms ease-in-out;
+
+				#service-chev {
+					width: 2rem;
+					height: 2rem;
+					transition: all 100ms ease-in-out;
+				}
+
+
+				&:hover {
+					top: 70%;
+
+					#service-chev {
+						width: 4rem;
+						height: 4rem;
+					}
+				}
+
 				.service-cta-col {
 
 					h4 {
