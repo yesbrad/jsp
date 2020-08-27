@@ -5,6 +5,7 @@ import {
   Link
 } from "react-router-dom";
 import { FaChevronRight } from 'react-icons/fa';
+import { Element } from 'react-scroll';
 
 const ServicesList = () => {
 
@@ -25,9 +26,9 @@ const ServicesList = () => {
 	)
 
 	return ( 
-		<div className="servicesList-container">
+		<Element name="services" className="servicesList-container">
 			{data.map((serv) => renderService(serv))}
-		</div>
+		</Element>
 	 );
 }
  

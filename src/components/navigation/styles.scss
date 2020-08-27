@@ -20,8 +20,26 @@
 	ul {
 		display: flex;
 		flex-direction: row;
-		li{
-			margin-left: 2rem;
+
+		li {
+			transition: transform 100ms ease-in-out;
+
+			.nav-link {
+				text-decoration: none;
+				color: black;
+				padding: 1rem 3rem;
+
+
+			}
+
+			#nav-link-highlight {
+				background: $primaryColor;
+				color: $white;
+			}
+
+			&:hover {
+				transform: scale(1.05);
+			}
 		}
 	}
 }

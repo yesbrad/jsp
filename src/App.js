@@ -30,6 +30,7 @@ const App = () => {
 					<Route path='/service/:id'>
 						<RenderService />
 					</Route>
+					<Route path='/services'><Home goToService /></Route>
 					<Route path='/about-us'><About /></Route>
 					<Route path='/contact'><Contact /></Route>
 					<Route path='/'><Home /></Route>

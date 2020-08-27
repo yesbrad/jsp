@@ -5,8 +5,28 @@ import Header from '../../components/header';
 import Heading from '../../components/heading';
 import ServicesList from '../../components/servicesList';
 import Footer from '../../components/footer';
+import { useEffect } from 'react';
+import { scroller } from 'react-scroll';
 
-const Home = () => {
+const Home = ({ goToService }) => {
+	useEffect(() => {
+		if (goToService === true) {
+			scroller.scrollTo('services', {
+				duration: 800,
+				delay: 0,
+				smooth: 'easeInOutQuart'
+			})
+		}
+
+		if (goToService === false) {
+			scroller.scrollTo('home', {
+				duration: 800,
+				delay: 0,
+				smooth: 'easeInOutQuart'
+			})
+		}
+	}, [goToService])
+	
 	return (  
 		<div className="home-container">
 			<Navigation />

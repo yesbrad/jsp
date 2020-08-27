@@ -5,6 +5,10 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 
+	@media screen and (max-width: $tabletSize){
+		grid-template-columns: repeat(1, 1fr);
+	}
+
 	.service-card {
 		padding: 1rem;
 		

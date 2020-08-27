@@ -4,7 +4,7 @@ import './styles.scss';
 const Button = ({ title, onClick }) => {
 	return ( 
 		<div className="button-container">
-			<button onClick={(e) => onclick(e)}>
+			<button onClick={(e) => onClick(e)}>
 				{title}
 			</button>
 		</div>

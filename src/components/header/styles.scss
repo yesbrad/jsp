@@ -13,7 +13,7 @@
 			bottom: 3rem;
 			right: 3rem;
 			background-color: $black;
-			width: 60%;
+			left: 30%;
 			color: white;
 			padding: 3rem;
 			box-sizing: border-box;
@@ -21,7 +21,14 @@
 			justify-content: space-between;
 			align-items: center;
 
-			.header-col{
+			@media screen and (max-width: $tabletSize){
+				left: 3rem;
+				flex-direction:  column;
+				align-items: flex-start;
+			}
+
+			.header-col-cta{
+				flex: 1;
 
 				h1 {
 					font-size: 2rem;
@@ -29,11 +36,34 @@
 					font-weight: 900;
 				}
 
-				h2 {
-					font-size: 3rem;
-					margin-bottom: 1rem;
-					font-weight: 900;
+				@media screen and (max-width: $tabletSize){
+					margin-bottom: 2rem;
 				}
+			}
+
+			.header-col-phone{
+				flex: 1;
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+				align-items: center;
+				transition: all 100ms ease-in-out;
+
+				&:hover {
+					transform: scale(1.02);
+					color: $primaryColor;
+				}
+
+				a {
+					font-size: 3rem;
+					font-weight: 900;
+					margin-left: 0.5rem;
+					text-decoration: none;
+					outline: none;
+					color: white;
+				}
+	
+
 			}
 		}
 }
