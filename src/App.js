@@ -9,6 +9,7 @@ import {
 import Home from './screens/home';
 import Service from './screens/service';
 import Contact from './screens/contact';
+import About from './screens/about';
   
 const RenderService = () => {
 	let { id } = useParams();
@@ -29,6 +30,7 @@ const App = () => {
 					<Route path='/service/:id'>
 						<RenderService />
 					</Route>
+					<Route path='/about-us'><About /></Route>
 					<Route path='/contact'><Contact /></Route>
 					<Route path='/'><Home /></Route>
 				</Switch>
