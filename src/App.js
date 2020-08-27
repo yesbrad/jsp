@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './screens/home';
 import Service from './screens/service';
+import Contact from './screens/contact';
   
 const RenderService = () => {
 	let { id } = useParams();
@@ -28,6 +29,7 @@ const App = () => {
 					<Route path='/service/:id'>
 						<RenderService />
 					</Route>
+					<Route path='/contact'><Contact /></Route>
 					<Route path='/'><Home /></Route>
 				</Switch>
 		  </Router>
