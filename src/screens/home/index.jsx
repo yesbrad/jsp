@@ -7,6 +7,7 @@ import ServicesList from '../../components/servicesList';
 import Footer from '../../components/footer';
 import { useEffect } from 'react';
 import { scroller } from 'react-scroll';
+import Ribbon from '../../components/ribbon';
 
 const Home = ({ goToService }) => {
 	useEffect(() => {
@@ -29,6 +30,7 @@ const Home = ({ goToService }) => {
 	
 	return (  
 		<div className="home-container">
+			<Ribbon />
 			<Navigation />
 			<Header />
 			<Heading title="Services" />
