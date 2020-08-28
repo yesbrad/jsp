@@ -27,6 +27,12 @@
 		}
 	}
 
+	.navigation-hamburger {
+		@media screen and (min-width: $tabletSize){
+			display: none;
+		}
+	}
+
 	ul {
 		display: flex;
 		flex-direction: row;
@@ -42,8 +48,6 @@
 				text-decoration: none;
 				color: black;
 				padding: 1rem 3rem;
-
-
 			}
 
 			#nav-link-highlight {
