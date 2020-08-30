@@ -11,7 +11,9 @@ const Footer = () => {
 					<li><Link className="footer-link" to="/about-us">About</Link></li>
 					<li><Link className="footer-link" to="/contact">Contact</Link></li>
 			</ul>
-			<span>Copyright John Simpson Plumbing ABN: 696 9696 969</span>
+			<span>ABN: 21 613 041 405</span>
+			<span>Licence No. 25728</span>
+			<span>© Copyright 2020 John Simpson Plumbing. All Rights Reserved.</span>
 		</div>
 	);
 }

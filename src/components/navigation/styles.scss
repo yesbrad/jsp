@@ -16,14 +16,26 @@
 	.nav-logo {
 		width: 10rem;
 		height: 10rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		background-image: url('../../images/JSP_LOGO_3000_Transparent.png');
 		background-position: center;
-		overflow: hidden;
-		background-size: cover;
+		background-size: contain;
 
 		@media screen and (max-width: $tabletSize){
 			width: 8rem;
 			height: 8rem;
+		}
+
+		h4 {
+			transform: translateX(16rem);
+			min-width: 20rem;
+			color: $darkGray;
+
+			@media screen and (max-width: $tabletSize){
+				display: none;
+			}
 		}
 	}
 

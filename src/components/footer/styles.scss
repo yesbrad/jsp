@@ -6,8 +6,8 @@
 	justify-content: flex-end;
 	align-items: center;
 	background-color: $primaryColor;
-	height: 15rem;
-	padding: 2rem;
+	//height: 15rem;
+	padding: 5rem 0;
 	box-sizing: border-box;
 
 	ul{
@@ -20,7 +20,7 @@
 
 		li {
 			color:white;
-			
+			margin: 0 1rem;
 			.footer-link {
 				text-decoration: none;
 
@@ -33,6 +33,7 @@
 
 	span {
 		color: $white;
-		font-size: 0.7rem;
+		font-size: 0.8rem;
+		margin: 0.3rem 0;
 	}
 }

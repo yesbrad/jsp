@@ -16,7 +16,7 @@ const Navigation = () => {
 		<div className="navigation-container">
 			<nav>
 				<div className="nav-logo">
-					
+					<h4>Quality Plumbing at Affordable Prices</h4>
 				</div>
 				<ul>
 					<li><Link className="nav-link" to="/">Home</Link></li>

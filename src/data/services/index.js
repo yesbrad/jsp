@@ -5,7 +5,7 @@ const data = [
 		miniDescription: 'Everything General Plumbing',
 		content: `
 		We can clear all types of blocked drains, from basins, showers, toilets, kitchen sinks, main sewer and storm water drains using modern machinery and/or hand tools. Most drains are cleared within an hour, with a minimum of fuss and a no mess approach.		`,
-		imageURI: require('../../images/General.jpg')
+		imageURI: require('../../images/General2.jpg')
 	},
 	{
 		name: 'Blocked Drains',
@@ -13,7 +13,7 @@ const data = [
 		miniDescription: 'Burst Pipes Mini Description',
 		content: `
 		We can clear all types of blocked drains, from basins, showers, toilets, kitchen sinks, main sewer and storm water drains using modern machinery and/or hand tools. Most drains are cleared within an hour, with a minimum of fuss and a no mess approach.		`,
-		imageURI: require('../../images/Blocked.jpg')
+		imageURI: require('../../images/Drain.jpg')
 	},
 	{
 		name: 'Hot Water Services',
@@ -32,7 +32,7 @@ const data = [
 		content: `
 		For conventional taps, we will fully recondition your ‘hard to turn off’ taps using the best quality parts so you can effortlessly turn off your dripping taps. For ‘Flick mixer type’ taps, that are leaking, we can replace the cartridge ‘at call’ as we stock most common types on board our service vehicle. As with any type of tapware, if its not worth repairing, we can also replace them at minimal cost.
 		`,
-		imageURI: require('../../images/Tap.jpg')
+		imageURI: require('../../images/Dishes.jpg')
 	},
 	{
 		name: 'Burst Pipe',
@@ -40,7 +40,7 @@ const data = [
 		miniDescription: 'Burst Pipes Mini Description',
 		content: `
 		Using modern specialised tooling, we can repair most types of leaking water pipes such as Copper, Pex pipe, Rehau, Galvanised Iron and other types. If the leak cannot be visibly seen, we can use our state of the art pipe locating and acoustic leak detection equipment to precisely locate the area of leakage with minimum disturbance of your assets.		`,
-		imageURI: require('../../images/Burst.jpg')
+		imageURI: require('../../images/Burst3.jpg')
 	},
 	{
 		name: 'Roof Repairs & Guttering Replacement',
@@ -54,7 +54,7 @@ const data = [
 		url: 'leak-detection-drain-locating',
 		miniDescription: '',
 		content: `All types of ‘unseen water leakage’ can be detected using our electronic acoustic leak detection equipment, possibly saving you many hours of digging and destructive work. Or if you need to know the location of your drains or water pipes prior to landscaping or building works, we can also locate these for you.`,
-		imageURI: require('../../images/Leak.jpg')
+		imageURI: require('../../images/LeakDetection.jpg')
 	},
 	{
 		name: 'Gas Appliance Servicing',
@@ -68,14 +68,14 @@ const data = [
 		url: 'tmv-testing-servicing',
 		miniDescription: '',
 		content: `For schools, aged care, kindergartens and healthcare facilities, we are licenced to test and maintain Thermostatic Mixing Valves (TMV’s) to satisfy your legal obligations. TMV’s should be tested as per government regulations, every 2 years and should be replaced or reconditioned every 5 years`,
-		imageURI: require('../../images/TZMC.jpg')
+		imageURI: require('../../images/tmc.jpg')
 	},
 	{
 		name: 'Water Tanks',
 		url: 'water-tanks',
 		miniDescription: '',
 		content: `We can install a variety of different style water tanks complete with pump, so you can water your garden or wash cars without the cost or waste of mains supplied water. We can also connect the tank water to your toilets and washing machine, saving you even more money on your water bill.`,
-		imageURI: require('../../images/Water.jpg')
+		imageURI: require('../../images/Water2.jpg')
 	},
 	
 ]
