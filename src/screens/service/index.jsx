@@ -4,8 +4,9 @@ import Navigation from '../../components/navigation';
 import data from '../../data/services';
 import Button from '../../components/button';
 import Footer from '../../components/footer';
+import { withRouter } from 'react-router-dom'
 
-const Service = ({ service }) => {
+const Service = ({ service, history }) => {
 	const currentData = data.find(ele => ele.url === service);
 
 	if (currentData === undefined)
@@ -17,14 +18,14 @@ const Service = ({ service }) => {
 			<h2>
 			<div className="service-page-info">
 				<div className="service-page-col">
-					<div style={{backgroundImage: `url(${currentData.imageURI})`, backgroundPosition: 'center', backgroundSize: 'cover'}} className="service-page-image" />
+						{currentData.imageURI.map(((dat) =>	<div style={{backgroundImage: `url(${dat})`, backgroundPosition: 'center', backgroundSize: 'cover'}} className="service-page-image" />))}
 				</div>
 				<div className="service-page-col">
 					<h1>{currentData.name}</h1>
 					<p>{currentData.content}</p>
 						<div className="services-page-contact">
 							<div className="services-button-container">
-								<Button title="Contact" />
+								<Button title="Contact" onClick={() => history.push("/contact")} />
 							</div>
 						<h4>or CALL on 0418 527 194</h4>
 					</div>
@@ -36,4 +37,4 @@ const Service = ({ service }) => {
 	);
 }
  
-export default Service;
+export default withRouter(Service);
