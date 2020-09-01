@@ -9,6 +9,7 @@ const Header = () => {
 		scroller.scrollTo('services', {
 			duration: 800,
 			delay: 0,
+			offset: -200,
 			smooth: 'easeInOutQuart'
 		})
 	}

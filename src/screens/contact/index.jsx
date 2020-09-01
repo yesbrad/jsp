@@ -5,6 +5,8 @@ import Footer from '../../components/footer';
 import { AiFillPhone } from 'react-icons/ai';
 import { MdMail } from 'react-icons/md';
 
+const suburbData = ["Waverley", " Malvern", " Caulfield", " Carnegie", " Wheelers Hill", " Dandenong", " Ashwood", " Bentleigh", " Berwick", " Blackburn", " Clayton", " Ferntree Gully", " Burwood", " Chadstone", " Hampton Park", " Rowville", " Scoresby", " Huntingdale", " Keysborough", "Knoxfield", " Lysterfield", " Narre Warren", " Noble Park", " Oakleigh", " Endeavour Hills", " Hallam", " Wantirna"];
+
 const Contact = () => {
 	return (  
 		<div className="contact-container">
@@ -29,7 +31,9 @@ const Contact = () => {
 						<a href="mailto:simpson.plumbing@bigpond.com">simpson.plumbing@bigpond.com</a>
 					</div>
 					<h5>We Serve</h5>
-					<p>Waverley, Malvern, Caulfield, Carnegie, Wheelers Hill, Dandenong, Ashwood, Bentleigh, Berwick, Blackburn, Clayton, Ferntree Gully, Burwood, Chadstone, Hampton Park, Rowville, Scoresby, Huntingdale, Keysborough,Knoxfield, Lysterfield, Narre Warren, Noble Park, Oakleigh, Endeavour Hills, Hallam, Wantirna, and all suburbs in between.</p>
+					<div className="contact-suburbs">
+						{suburbData.map((a) => <span>{a}</span>)}
+					</div>
 				</div>
 			</div>
 			<Footer />

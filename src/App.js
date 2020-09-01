@@ -12,7 +12,6 @@ import Service from './screens/service';
 import Contact from './screens/contact';
 import About from './screens/about';
 import { useTransition, animated } from 'react-spring'
-import scrollToTop from './components/scrollToTop';
 
 const RenderService = () => {
 	let { id } = useParams();
@@ -33,7 +32,6 @@ const AppTrans = () => {
 
   return transitions.map(({ item: location, props, key }) => (
 		<animated.div key={key} style={props}>
-			<scrollToTop />
 			<Switch location={location}>
 				<Route path='/service/:id'>
 					<div style={{position: 'absolute', width: '100%', height: '100%'}}><RenderService /></div>

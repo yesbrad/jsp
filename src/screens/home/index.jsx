@@ -14,6 +14,7 @@ const Home = ({ goToService }) => {
 		if (goToService === true) {
 			scroller.scrollTo('services', {
 				duration: 800,
+				offset: -200,
 				delay: 0,
 				smooth: 'easeInOutQuart'
 			})

@@ -30,7 +30,7 @@
 	.contact-info {
 		padding: 6rem 10rem;
 		box-sizing: border-box;
-
+		
 		@media screen and (max-width: $tabletSize){
 			padding: 6rem 3rem;
 			box-sizing: border-box;
@@ -126,8 +126,23 @@
 			font-weight: 700;
 		}
 
-		p {
-			line-height: 1.3rem;
+		.contact-suburbs {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+
+			@media screen and (max-width: $tabletSize){
+				grid-template-columns: repeat(2, 1fr);
+			}
+			box-sizing: border-box;
+
+			span {
+				font-size: 0.9rem;
+				padding: 0.75rem;
+				color:white;
+				background: $black;
+				margin: 0.25rem;
+				box-sizing: border-box;
+			}
 		}
 	}
 }

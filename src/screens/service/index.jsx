@@ -5,16 +5,29 @@ import data from '../../data/services';
 import Button from '../../components/button';
 import Footer from '../../components/footer';
 import { withRouter } from 'react-router-dom'
+import { useEffect } from 'react';
+import { scroller, Element } from 'react-scroll';
 
 const Service = ({ service, history }) => {
+	useEffect(() => {
+		scroller.scrollTo('topServ', {
+			duration: 800,
+			delay: 0,
+			smooth: 'easeInOutQuart'
+		});
+	}, []);
+
 	const currentData = data.find(ele => ele.url === service);
 
 	if (currentData === undefined)
 		return <h5>Broken Should have never got here!</h5>
 
+	
 	return (  
 		<div className="service-container">
-			<Navigation />
+			<Element name="topServ">	
+				<Navigation />
+			</Element>
 			<h2>
 			<div className="service-page-info">
 				<div className="service-page-col">
