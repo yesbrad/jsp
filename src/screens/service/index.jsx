@@ -34,7 +34,8 @@ const Service = ({ service, history }) => {
 						{currentData.imageURI.map(((dat) =>	<div style={{backgroundImage: `url(${dat})`, backgroundPosition: 'center', backgroundSize: 'cover'}} className="service-page-image" />))}
 				</div>
 				<div className="service-page-col">
-					<h1>{currentData.name}</h1>
+						<h1>{currentData.name}</h1>
+						{currentData.subHeading && <h5>{currentData.subHeading}</h5>}
 					<p>{currentData.content}</p>
 						<div className="services-page-contact">
 							<div className="services-button-container">
