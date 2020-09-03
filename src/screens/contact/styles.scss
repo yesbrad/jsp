@@ -18,9 +18,10 @@
 			}
 
 			.contact-image {
-				background-image: url('../../images/VanDouble1.jpg');
+				background-image: url('../../images/VanSingle.jpg');
 				background-position: center;
-				background-size: cover;
+				background-size: contain;
+				background-repeat: no-repeat;
 				width: 100%;
 				height: 100%;
 			}

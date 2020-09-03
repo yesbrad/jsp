@@ -10,7 +10,7 @@ const Ribbon = () => {
 					<FaFacebook style={{width: '2rem', height:'2rem'}}/>
 					<a href="https://www.facebook.com/John-Simpson-Plumbing-106764647808713">Follow US on Facebook!</a>
 				</div>
-				<h4>CALL US: 0418 527 194</h4>
+				<a className="ribbonNumber" href="tel:0418527194">CALL US: 0418 527 194</a>
 			</div>
 		</div>
 	);

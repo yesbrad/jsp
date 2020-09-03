@@ -19,11 +19,14 @@
 		padding: 0 1rem;
 		box-sizing: border-box;
 
-		h4 {
+		.ribbonNumber {
 			font-size: 1.3rem;
 			font-weight: 900;
 			width: 100%;
 			text-align: right;
+			color: white;
+			text-decoration: none;
+
 		}
 
 		.ribbon-socials {
